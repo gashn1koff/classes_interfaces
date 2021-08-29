@@ -2,7 +2,8 @@
     "name": "vagrant/project1",
     "autoload": {
         "psr-4": {
-            "Vagrant\\Project1\\": "src/"
+            "App\\": "app/",
+            "Etc\\": "etc/"
         }
     },
     "require": {}

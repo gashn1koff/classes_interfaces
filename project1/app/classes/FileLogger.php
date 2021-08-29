@@ -8,12 +8,16 @@ class FileLogger implements Logger
 {
     public function writeToLog()
     {
-        echo 'Your file is WRITE successful';
+        echo "<br>";
+        echo 'Your file is WRITE successful(FileLogger)';
+        echo "</br>";
     }
 
     public function readFromLog()
     {
-        echo 'Your file is READ successful';
+        echo "<br>";
+        echo 'Your file is READ successful(FileLogger)';
+        echo "</br>";
     }
 
 }

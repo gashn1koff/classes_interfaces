@@ -2,22 +2,18 @@
 
 
 namespace App\Controllers;
+use App\Models\Page;
+
 
 
 class HomeController
 {
-    public function showProduct(){
-        echo 'Showproduct home';
+    public function index(){
+        $pages = Page::search();
+        render('home/index', ['templatePages' => $pages]);
     }
 
-    public function contacts()
-    {
+    public function contacts(){
         echo "contacts";
-    }
-    public function index(){
-        render('home/index', [
-            'name' => 'Nikita',
-            'second_name' => 'Gashnikov',
-        ]);
     }
 }

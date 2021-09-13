@@ -10,11 +10,10 @@ class DB
 
     public static function getConnection()
     {
-        if(is_null(static::$connection)){
-            echo 'fdsfdssdsd';
-            return self::$connection = new \mysqli('localhost', 'homestead', 'secret', 'tms');
+        if (is_null(self::$connection)) {
+            self::$connection = new \mysqli('localhost', 'homestead', 'secret', 'tms', '3306');
         }
-        return self::$connection;
 
+        return self::$connection;
     }
 }
